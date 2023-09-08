@@ -32,8 +32,13 @@ Public Class Form3
                 DefaultEmail = outlookApp.Session.Accounts.Item(1).SmtpAddress
             End If
 
+            ' Add the default email as the first item in the list
+            If Not String.IsNullOrWhiteSpace(DefaultEmail) Then
+                ListBoxEmails.Items.Insert(0, DefaultEmail)
+            End If
+
             ' Set the default email as the selected item
-            ListBoxEmails.SelectedItem = DefaultEmail
+            ListBoxEmails.SelectedIndex = 0
         Catch ex As Exception
             ' Handle any errors that occur during loading
             MessageBox.Show("Erro ao carregar o suplemento DirecionarRespostas " & ex.Message)
@@ -74,12 +79,17 @@ Public Class Form3
             ' Add the new email to the ListBox and the file
             If Not String.IsNullOrWhiteSpace(newEmail) AndAlso Not ListBoxEmails.Items.Contains(newEmail) Then
                 ListBoxEmails.Items.Add(newEmail)
-                IO.File.AppendAllText(filePath, Environment.NewLine & newEmail)
+
+                ' Check if the file is empty to decide whether to prepend a newline to the new email
+                Dim prependNewLine As Boolean = IO.File.Exists(filePath) AndAlso New FileInfo(filePath).Length > 0
+
+                IO.File.AppendAllText(filePath, If(prependNewLine, Environment.NewLine, String.Empty) & newEmail)
                 MessageBox.Show("Email adicionado com sucesso.")
                 TextBoxNewEmail.Clear()  ' Clear the TextBox
             Else
                 MessageBox.Show("Erro: endereço email invalido ou ja adicionado na lista")
             End If
+
         Catch ex As Exception
             ' Handle any errors that occur during the addition of the new email
             MessageBox.Show("Ocorreu um erro ao adicionar o email" & ex.Message)

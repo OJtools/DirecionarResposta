@@ -74,21 +74,19 @@ Partial Class Form3
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(12, 6)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(349, 16)
+        Me.Label1.Size = New System.Drawing.Size(376, 25)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Selecione o email para onde sera enviada a resposta"
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 255)
+        Me.Label2.Location = New System.Drawing.Point(12, 246)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(207, 16)
+        Me.Label2.Size = New System.Drawing.Size(376, 21)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Adicionar um novo email á lista"
         '
@@ -102,7 +100,7 @@ Partial Class Form3
         Me.ListBoxEmails.ItemHeight = 16
         Me.ListBoxEmails.Location = New System.Drawing.Point(12, 37)
         Me.ListBoxEmails.Name = "ListBoxEmails"
-        Me.ListBoxEmails.Size = New System.Drawing.Size(376, 194)
+        Me.ListBoxEmails.Size = New System.Drawing.Size(376, 178)
         Me.ListBoxEmails.TabIndex = 6
         '
         'Label3
@@ -112,7 +110,7 @@ Partial Class Form3
         Me.Label3.ForeColor = System.Drawing.Color.Indigo
         Me.Label3.Location = New System.Drawing.Point(12, 335)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(376, 22)
+        Me.Label3.Size = New System.Drawing.Size(503, 22)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "© OJTools 2023 "
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -122,7 +120,7 @@ Partial Class Form3
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(552, 363)
+        Me.ClientSize = New System.Drawing.Size(527, 363)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.ListBoxEmails)
         Me.Controls.Add(Me.Label2)
