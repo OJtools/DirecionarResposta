@@ -13,10 +13,14 @@ Instalação:
 Descarregue o ficheiro de instalação em https://github.com/OJtools/DirecionarResposta/releases
 
 Instalação automatica:
+
 DirecionarResposta.exe - instala o suplemento automaticamente (o windows ira bloquear a instalação carregue em "mais info" e execute ou siga os passos para instalação manual)
 
 Instalação Manual
+
 DirecionarResposta_manual.zip - versão zip contendo o ficheiro  .vsto (extrair todo o conteudo para uma pasta no computador e executar o ficheiro "DirecionarResposta.vsto", Atenção!!! se executar dentro do ficheiro .zip sem extrair para uma pasta a instalaçáo dara erro)
+
+
 
 Utilização
 Depois de instalado o suplemento sempre que clicar no Botão “Enviar” ira abrir a janela “Direcionar Resposta”
