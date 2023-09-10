@@ -18,7 +18,7 @@ DirecionarResposta.exe - instala o suplemento automaticamente (o windows ira blo
 
 Instalação Manual
 
-DirecionarResposta_manual.zip - versão zip contendo o ficheiro  .vsto (extrair todo o conteudo para uma pasta no computador e executar o ficheiro "DirecionarResposta.vsto", Atenção!!! se executar dentro do ficheiro .zip sem extrair para uma pasta a instalaçáo dara erro)
+DirecionarResposta_manual.zip - versão zip contendo o ficheiro  .vsto (extrair todo o conteudo para uma pasta no computador e executar o ficheiro "DirecionarResposta.vsto", Atenção!!! se executar dentro do ficheiro .zip sem extrair para uma pasta a instalaçáo dá erro)
 
 
 
