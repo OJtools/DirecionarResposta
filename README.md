@@ -23,6 +23,7 @@ DirecionarResposta_manual.zip - versão zip contendo o ficheiro  .vsto (extrair 
 
 
 Utilização
+
 Depois de instalado o suplemento sempre que clicar no Botão “Enviar” ira abrir a janela “Direcionar Resposta”
 Caso o email para onde quer que as respostas sejam enviadas não esteja na lista deverá adiciona-lo conforme a imagem.
  
